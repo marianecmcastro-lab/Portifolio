@@ -1,0 +1,55 @@
+/* Cores do portfólio: sempre fundo preto, sem modo claro.
+   Paleta terrosa/boho: texto creme, cinzas quentes e destaque verde-sálvia. */
+:root{
+  color-scheme: dark;
+  --bg:#000000;
+  --fg:#F0ECE4;          /* pergaminho claro (17.8:1 no preto) */
+  --muted:#BEBBB3;       /* linho (10.9:1 no preto, 9.5:1 nos blocos escuros) */
+  --line:#2A2622;        /* terra escura */
+  --line-strong:#3B3530;
+  --slot:#171512;
+  --slot2:#13110F;
+  --panel:#110F0D;
+  --accent:#8DB27A;      /* verde-musgo (8.8:1 no preto) */
+}
+html, body{ background:var(--bg); color:var(--fg); }
+/* Números na altura das maiúsculas (a Cormorant usa números de texto antigo por padrão) */
+body{ font-variant-numeric: lining-nums; }
+a{ color:var(--fg); }
+a:hover{ color:var(--accent); }
+
+/* ─── Acessibilidade (WCAG 2.2 AAA) ─────────────────────────────────── */
+
+/* Foco sempre visível ao navegar pelo teclado (2.4.7 / 2.4.13) */
+:focus-visible{ outline:3px solid var(--accent); outline-offset:4px; border-radius:2px; }
+main:focus{ outline:none; }
+
+/* Áreas clicáveis de no mínimo 44 × 44 px (2.5.5).
+   Links dentro de frases ficam de fora, como a norma permite. */
+a:not(p a):not(li a):not(figcaption a){
+  display:inline-flex; align-items:center; min-height:44px; min-width:44px;
+}
+
+/* "Pular para o conteúdo": aparece ao receber foco pelo teclado (2.4.1) */
+.skip{
+  position:absolute; left:16px; top:-100px; z-index:10;
+  padding:12px 20px; background:var(--fg); color:var(--bg) !important;
+  font:500 16px 'Hanken Grotesk',system-ui,sans-serif; text-decoration:none;
+}
+.skip:focus{ top:16px; }
+
+/* Quem pede menos movimento não recebe rolagem animada (2.3.3) */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto !important; }
+  *, *::before, *::after{ transition:none !important; animation:none !important; }
+}
+
+/* Imagens dos projetos na Home: todas do mesmo tamanho (16:9).
+   Imagens com outro formato são recortadas para preencher o quadro. */
+.thumb{ display:flex; width:100%; aspect-ratio:16 / 9; height:auto; box-sizing:border-box; }
+img.thumb{ display:block; object-fit:cover; background:var(--slot2); }
+
+/* Chave de confidencialidade (ver BLOQUEADO em theme.js) */
+:root:not([data-locked="true"]) [data-lock]{ display:none !important; }
+:root[data-locked="true"] [data-unlock]{ display:none !important; }
+[data-unlock]{ text-align:center; padding:24px; box-sizing:border-box; }
