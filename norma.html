@@ -1,0 +1,396 @@
+<!doctype html><html lang="pt-BR"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.norma-nav{display:flex;gap:28px;font-size:15px;margin-left:auto}
+.next{border-top:1px solid var(--line);margin-top:72px;padding:40px 0 112px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px}
+.next a{font-family:var(--serif);font-weight:400;font-size:clamp(32px,5vw,56px);line-height:1.05;letter-spacing:-0.01em}
+</style><link rel="stylesheet" href="theme.css">
+<script src="theme.js"></script>
+</head><body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<title>Norma, case completo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Hanken+Grotesk:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: single editorial column, hairline-separated sections, mirrors the public portfolio. */
+:root{
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Hanken Grotesk',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-height:1.55}
+a{color:var(--fg);text-decoration:none}
+a:hover{color:var(--accent)}
+.wrap{max-width:1200px;margin:0 auto;padding-block:0;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-block:32px}
+header .name{font-size:17px;font-weight:600;letter-spacing:-0.01em}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px}
+.eyebrow{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hero{padding-block:88px 56px;display:flex;flex-direction:column;gap:28px}
+h1{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(46px,7vw,92px);line-height:1.03;letter-spacing:-0.02em;max-width:13em;text-wrap:balance}
+.lede{margin:0;font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:680px}
+.meta{display:flex;flex-wrap:wrap;gap:24px 48px;padding-block:24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:15px}
+.meta div{display:flex;flex-direction:column;gap:6px;flex:1 1 160px;min-width:0}
+.meta span.k{color:var(--muted);font-size:14px}
+section.s{display:flex;flex-wrap:wrap;gap:20px 64px;padding-block:72px 8px}
+section.s>h2{margin:0;font-size:14px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;flex:1 1 200px}
+.body{flex:3 1 480px;min-width:0;max-width:720px;display:flex;flex-direction:column;gap:20px}
+.body.wide{max-width:none}
+.body p{margin:0;font-size:19px;line-height:1.6}
+.body h3{margin:12px 0 0;font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.15}
+.list{display:flex;flex-direction:column}
+.list .row{display:flex;flex-wrap:wrap;gap:8px 24px;padding-block:16px;border-top:1px solid var(--line);font-size:17px}
+.list .row:last-child{border-bottom:1px solid var(--line)}
+.list .row .k{flex:1 1 180px;color:var(--muted)}
+.list .row .v{flex:3 1 300px;min-width:0}
+.big{display:flex;flex-wrap:wrap;gap:16px 48px}
+.big div{display:flex;flex-direction:column;gap:2px}
+.big b{font-family:var(--serif);font-weight:400;font-size:clamp(56px,7vw,88px);line-height:1;color:var(--accent)}
+.big span{font-size:14px;color:var(--muted)}
+.slot{background:var(--slot);color:var(--muted);font-size:14px;text-align:center;padding:24px;display:flex;align-items:center;justify-content:center;min-height:clamp(220px,34vw,420px)}
+.ph{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:15px}
+.label{font-size:14px;color:var(--muted);letter-spacing:.04em}
+.phases{display:flex;flex-wrap:wrap;gap:16px}
+.phase{flex:1 1 200px;min-width:0;border-top:1px solid var(--fg);padding-top:14px;display:flex;flex-direction:column;gap:4px}
+.phase b{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.1}
+.phase span{font-size:15px;color:var(--muted)}
+.quote{margin:0;font-family:var(--serif);font-size:clamp(28px,3.4vw,44px);line-height:1.5;letter-spacing:-0.01em;max-width:20em;text-wrap:balance;font-weight:400}
+.pr{display:flex;flex-direction:column}
+.pr .item{display:flex;flex-wrap:wrap;gap:8px 32px;padding-block:20px;border-top:1px solid var(--line)}
+.pr .item:last-child{border-bottom:1px solid var(--line)}
+.pr .item .n{flex:1 1 220px;min-width:0;font-weight:600;font-size:17px}
+.pr .item .d{flex:3 1 320px;min-width:0;font-size:17px;line-height:1.55}
+.diagram{overflow-x:auto;border:1px solid var(--line);background:var(--panel)}
+.diagram svg{display:block;min-width:1120px;width:100%;height:auto}
+.diagram .t{fill:var(--fg);font:500 14px var(--sans)}
+.diagram .m{fill:var(--muted);font:400 12px var(--sans)}
+.diagram .box{fill:var(--bg);stroke:var(--line);stroke-width:1}
+.diagram .hi{fill:var(--bg);stroke:var(--accent);stroke-width:1.6}
+.diagram .ln{stroke:var(--muted);stroke-width:1.2;fill:none}
+.diagram .dash{stroke-dasharray:5 4}
+.diagram .ah{fill:var(--muted)}
+.panel{background:var(--panel);padding:clamp(24px,4vw,40px);font-size:16px;color:var(--muted)}
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:96px;padding-block:24px 40px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <header>
+    <a class="name" href="index.html">Mari Castro</a>
+    <span class="badge" data-lock>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      Versão completa · compartilhar sob solicitação
+    </span>
+    <nav class="norma-nav"><a href="index.html#projetos">← Projetos</a><a href="index.html#contato">Contato</a></nav>
+  </header>
+<main id="conteudo" tabindex="-1">
+
+  <div class="hero">
+    <div class="eyebrow">Case · IA aplicada a design · BEES · 2026</div>
+    <h1>Norma, um parceiro conversacional para o time de design.</h1>
+    <p class="lede">Ajuda designers e times de produto a investigar problemas, organizar o pensamento, avaliar a qualidade da experiência e definir próximos passos úteis. Recomenda, evidencia e orquestra. Não decide por ninguém.</p>
+  </div>
+
+  <div class="meta">
+    <div><span class="k">Papel</span><span>Senior Product Design Manager</span></div>
+    <div><span class="k">Minha atuação</span><span>Concepção e orquestração</span></div>
+    <div><span class="k">Base metodológica</span><span>BMAD, adaptada ao time</span></div>
+    <div><span class="k">Início</span><span>22 set 2026</span></div>
+    <div><span class="k">Time</span><span>~9 pessoas, incluindo eu</span></div>
+  </div>
+
+  <section class="s">
+    <h2>Missão</h2>
+    <div class="body">
+      <p class="quote">Ajudar a compreender problemas, desafiar premissas e decidir com mais informações, sem decidir pelo usuário.</p>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Em números</h2>
+    <div class="body">
+      <div class="big">
+        <div><b>1</b><span>shell que orquestra</span></div>
+        <div><b>8</b><span>workflows no kit</span></div>
+        <div><b>6</b><span>personas (lentes)</span></div>
+        <div><b>9</b><span>etapas no fluxo linear</span></div>
+      </div>
+      <p style="font-size:17px;color:var(--muted)">Além dos 8 workflows do kit, há a elicitação avançada, um workflow paralelo.</p>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Anatomia</h2>
+    <div class="body">
+      <p>Norma é a shell: um agente que orquestra, evidencia e recomenda. Sobre ela, um kit é acoplado sob demanda, em workflows. Em cada workflow, o orquestrador aciona a persona certa como lente.</p>
+      <div class="label">Kit Norma · 8 workflows</div>
+      <div class="chips">
+        <span>Brainstorming</span><span>Heuristic review</span><span>Design system compliance</span><span>Product context</span><span>Strategy alignment</span><span>Understand (intake)</span><span>UX research</span><span>UX writing</span>
+      </div>
+      <div class="label">Personas · 6 lentes</div>
+      <div class="chips">
+        <span>Product Manager Specialist</span><span>UX Strategist</span><span>UX Research Specialist</span><span>Product Design Specialist</span><span>UX Writing Specialist</span><span>Design System Steward</span>
+      </div>
+      <div class="label">Workflow paralelo</div>
+      <div class="chips"><span>Elicitação avançada</span></div>
+      <p style="font-size:17px;color:var(--muted)">Pode ser acionada pelo usuário ou sugerida pela Norma quando ainda há muitas questões em aberto. Serve para aprofundar o entendimento, buscar lacunas mais profundas e a causa raiz.</p>
+      <div class="label">Como as personas entram</div>
+      <p style="font-size:17px;color:var(--muted)">Um workflow pode envolver mais de uma persona. No brainstorming, por exemplo, uma persona lidera e as outras são acionadas conforme a interação com o usuário.</p>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Orquestração</h2>
+    <div class="body wide">
+      <div class="diagram" tabindex="0" role="region" aria-label="Diagrama da orquestração (role para o lado em telas menores)">
+        <svg viewBox="0 0 960 440" role="img" aria-label="Diagrama da orquestração da Norma: o designer decide, a shell Norma orquestra, escolhe um workflow do kit e uma persona como lente, e registra artefatos apoiados pela knowledge base">
+          <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0 0 L10 5 L0 10 z"/></marker></defs>
+          <rect class="box" x="40" y="30" width="220" height="70"/>
+          <text class="t" x="60" y="60">Designer</text><text class="m" x="60" y="82">decide e autoriza</text>
+          <rect class="hi" x="370" y="30" width="220" height="70"/>
+          <text class="t" x="390" y="60">Norma (shell)</text><text class="m" x="390" y="82">orquestra · evidencia · recomenda</text>
+          <rect class="box" x="700" y="30" width="220" height="70"/>
+          <text class="t" x="720" y="60">Knowledge base</text><text class="m" x="720" y="82">contextos e materiais da companhia</text>
+          <line class="ln" x1="262" y1="65" x2="368" y2="65" marker-end="url(#ar)" marker-start="url(#ar)"/>
+          <line class="ln" x1="698" y1="65" x2="592" y2="65" marker-end="url(#ar)"/>
+          <line class="ln" x1="480" y1="100" x2="480" y2="148" marker-end="url(#ar)"/>
+          <rect class="box" x="300" y="150" width="360" height="50"/>
+          <text class="t" x="480" y="172" text-anchor="middle">Roteamento: um workflow por vez</text>
+          <text class="m" x="480" y="190" text-anchor="middle">uma conversa, um motor de roteamento</text>
+          <text class="m" x="40" y="224">Lente acionada conforme a necessidade: PM · UX Strategist · UX Research · Product Design · UX Writing · Design System Steward</text>
+          <rect class="box" x="40" y="238" width="205" height="34"/><text class="t" x="54" y="260" style="font-size:14px">Brainstorming</text>
+          <rect class="box" x="275" y="238" width="205" height="34"/><text class="t" x="289" y="260" style="font-size:14px">Heuristic review</text>
+          <rect class="box" x="510" y="238" width="205" height="34"/><text class="t" x="524" y="260" style="font-size:14px">Design system compliance</text>
+          <rect class="box" x="745" y="238" width="205" height="34"/><text class="t" x="759" y="260" style="font-size:14px">Product context</text>
+          <rect class="box" x="40" y="280" width="205" height="34"/><text class="t" x="54" y="302" style="font-size:14px">Strategy alignment</text>
+          <rect class="box" x="275" y="280" width="205" height="34"/><text class="t" x="289" y="302" style="font-size:14px">Understand (intake)</text>
+          <rect class="box" x="510" y="280" width="205" height="34"/><text class="t" x="524" y="302" style="font-size:14px">UX research</text>
+          <rect class="box" x="745" y="280" width="205" height="34"/><text class="t" x="759" y="302" style="font-size:14px">UX writing</text>
+          <line class="ln" x1="260" y1="316" x2="260" y2="370" marker-end="url(#ar)"/>
+          <rect class="box" x="40" y="372" width="440" height="50"/>
+          <text class="t" x="60" y="395">Artefatos registrados</text><text class="m" x="60" y="413">base de dados da iniciativa, consultável depois</text>
+          <rect class="box dash" x="520" y="372" width="400" height="50" style="stroke:var(--muted);stroke-dasharray:5 4"/>
+          <text class="t" x="540" y="395">Camada de dados (planejada)</text><text class="m" x="540" y="413">Databricks, Segment e outras, para triangular</text>
+        </svg>
+      </div>
+      <p class="ph" style="font-size:15px">[Versão compartilhável: antes de enviar fora da companhia, confira se os nomes das ferramentas e dos workflows podem aparecer.]</p>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Dois modos de uso</h2>
+    <div class="body">
+      <h3>Fluxo linear</h3>
+      <p>Para entregas que já têm iniciativa e business case completos. Do discovery ao protótipo navegável de alta fidelidade, assistido por IA.</p>
+      <div class="phases">
+        <div class="phase"><b>Understand</b><span>etapas 1.1 a 1.3</span></div>
+        <div class="phase"><b>Visual Exploration</b><span>etapas 2.1 a 2.3</span></div>
+        <div class="phase"><b>Materialization</b><span>etapas 3.1 a 3.3</span></div>
+      </div>
+      <h3>Modo chat</h3>
+      <p>Os workflows são acionados sob demanda para explorar ideias, análises, contexto, product knowledge e oportunidades que ainda não viraram iniciativa nem business case. Também dá para analisar a qualidade de protótipos, tanto navegáveis no Cursor quanto no Figma.</p>
+      <figure style="margin:16px 0 0;display:flex;flex-direction:column;gap:12px">
+        <img src="images/norma-processo.webp" alt="Diagrama do processo de design agêntico em quatro fases. Fase 00, Explore: exploração preliminar, que gera a decisão de explorar. Fase 01, Understand: exploração do problema, discovery e requisitos de alto nível, que geram o design brief. Fase 02, Visual exploration: especificação do conceito, wireframes e protótipo de alta fidelidade no Hexa, que geram o protótipo hi-fi. Fase 03, Materialization: validação com revisões por agentes (heurísticas, design system, UX writing e acessibilidade), handoff e lançamento, que geram a comunicação do case." width="2000" height="1431" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="font-size:14px;line-height:1.55;color:var(--muted)">O processo de design agêntico: quatro fases conectadas, cada uma com um ponto de entrada próprio e um artefato de saída que alimenta a fase seguinte. <a href="images/norma-processo.webp">Abrir a imagem em tamanho real</a>.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Princípios imutáveis</h2>
+    <div class="body">
+      <div class="pr">
+        <div class="item"><span class="n">Autoridade de decisão</span><span class="d">A Norma apenas recomenda. O designer precisa determinar uma decisão explícita.</span></div>
+        <div class="item"><span class="n">Evidência antes de ficção</span><span class="d">Afirmações materiais exigem confiança e fonte rastreável. A síntese liga artefatos e conflitos, e não converte recomendação em decisão confirmada.</span></div>
+        <div class="item"><span class="n">Perguntas antes de análise</span><span class="d">No intake, uma pergunta por turno. No chat, cinco respostas antes de puxar contexto remoto ou rodar um workflow, para entender a necessidade real.</span></div>
+        <div class="item"><span class="n">O designer autoriza persistência e escopo</span><span class="d">Gravar arquivos exige autorização explícita.</span></div>
+        <div class="item"><span class="n">Uma conversa, um motor de roteamento</span><span class="d">O orquestrador escolhe workflows e personas. Workflows não ativam outros workflows, e outras lentes são oferecidas como follow-up, nunca em silêncio.</span></div>
+        <div class="item"><span class="n">Parceira de design, não narradora de processo</span><span class="d">Uma unidade informativa por turno. Os openers de fase sinalizam, não dão permissão para avançar.</span></div>
+        <div class="item"><span class="n">Separação cognitiva no raciocínio</span><span class="d">Sempre distingue evidência, suposição, restrição e recomendação. Mantém trade-offs explícitos, traz opções quando há caminhos viáveis e marca decisões como abertas.</span></div>
+      </div>
+      <p style="font-size:17px;color:var(--muted)">O que a Norma não substitui: pesquisa com usuários, especialistas em UX writing, times de design system, product managers e decisões de produto.</p>
+      <p class="ph" style="font-size:15px">[Opcional: uma linha por princípio sobre o que ele protege ou a decisão de design por trás dele.]</p>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Artefatos e conhecimento</h2>
+    <div class="body">
+      <div class="list">
+        <div class="row"><span class="k">Artefatos</span><span class="v">Cada fase ou workflow gera artefatos registrados, que formam a base de dados da iniciativa.</span></div>
+        <div class="row"><span class="k">Exploração</span><span class="v">Brainstorming e exploração também geram artefatos, consultados depois quando já existe iniciativa e business case relacionados.</span></div>
+        <div class="row"><span class="k">Knowledge base</span><span class="v">Baseada nos contextos da companhia e nos materiais desenvolvidos e compartilhados.</span></div>
+        <div class="row"><span class="k">Dados (a entrar)</span><span class="v">Análise via Databricks, Segment e outras ferramentas, para complementar a knowledge base e triangular dados nos outputs.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Minha atuação</h2>
+    <div class="body">
+      <div class="list">
+        <div class="row"><span class="k">Orquestração</span><span class="v">Construção direta da arquitetura: shell, kit de workflows e personas acionadas conforme a necessidade.</span></div>
+        <div class="row"><span class="k">Personas</span><span class="v">Definição das 6 personas e do papel de cada lente.</span></div>
+        <div class="row"><span class="k">Workflows</span><span class="v">Desenho dos 8 workflows e de como cada um é acionado.</span></div>
+        <div class="row"><span class="k">Não linearidade</span><span class="v">Desenho de um processo que acompanha a natureza do trabalho na companhia: um fluxo linear para iniciativas completas e um modo chat para o que ainda não foi oficializado.</span></div>
+        <div class="row"><span class="k">Adaptação</span><span class="v">Parti da metodologia BMAD como base inicial e adaptei às necessidades do time de design.</span></div>
+        <div class="row"><span class="k">Fases onde atuei mais</span><span class="v">Understand, o processo de discovery, e a validação heurística, incluindo a definição do design system compliance score.</span></div>
+        <div class="row"><span class="k">Esqueleto</span><span class="v">Toda a estrutura inicial foi desenvolvida por mim. Depois, o projeto ganhou tração e outros designers se uniram.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Integrações</h2>
+    <div class="body">
+      <div class="list">
+        <div class="row"><span class="k">Base de conhecimento</span><span class="v">Integração com toda a knowledge base da companhia.</span></div>
+        <div class="row"><span class="k">UX writing</span><span class="v">Agentes de UX writing que já existiam, incorporados ao fluxo.</span></div>
+        <div class="row"><span class="k">Design system</span><span class="v">Skills de design system que já existiam, incorporadas ao fluxo.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Liderança da orquestração inicial</h2>
+    <div class="body">
+      <p>Pessoas diretamente envolvidas na orquestração inicial da Norma, em liderança.</p>
+      <div class="list">
+        <div class="row"><span class="k">Aline Faria</span><span class="v">Principal Product Designer</span></div>
+        <div class="row"><span class="k">Douglas Lazarini</span><span class="v">Senior Product Designer II</span></div>
+        <div class="row"><span class="k">Ricardo Otsubo</span><span class="v">Senior Product Designer I</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Time e colaboração</h2>
+    <div class="body">
+      <p>O projeto começou em 22 de setembro de 2026 e ganhou tração rapidamente. Hoje o time geral tem cerca de 9 pessoas, incluindo eu. Alguns designers atuam diretamente na construção.</p>
+      <div class="list">
+        <div class="row"><span class="k">Designer Senior II, design system</span><span class="v">Trabalhei diretamente com ele. Focou na construção do workflow de wireframes e protótipo hi-fi.</span></div>
+        <div class="row"><span class="k">Designer Senior</span><span class="v">Apoiou a orquestração do fluxo.</span></div>
+        <div class="row"><span class="k">Demais designers</span><span class="v">Atuam no projeto e contribuem com uso, feedback e evolução.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Em uso</h2>
+    <div class="body">
+      <h3>Análise e brainstorming de uma ferramenta de gestão de dados de produto</h3>
+      <p>A Norma foi usada para analisar e fazer brainstorming de uma ferramenta de gestão de dados de produto, organizada na estrutura Produto &gt; Variante &gt; Item (SKU).</p>
+      <div class="list">
+        <div class="row"><span class="k">Contexto usado</span><span class="v">Discussões estratégicas, anotações de reuniões, contexto de business case e conhecimento de produto da companhia.</span></div>
+        <div class="row"><span class="k">Lacuna encontrada</span><span class="v">A estrutura atual não considerava um ambiente multi-variante na gestão de produto, o que poderia impactar a gestão de dados da companhia.</span></div>
+        <div class="row"><span class="k">O que mudou</span><span class="v">Destravou a aplicação da estrutura atual e abriu uma discussão estratégica sobre a implementação com pares, pares de produto, engenharia e stakeholders.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Case log e wireframes</h2>
+    <div class="body">
+      <p>No projeto SKU Limits escalável, a Norma gerou um case log: um registro navegável de cada etapa do processo, da decisão de explorar ao handoff. Nele ficam o resumo da iniciativa e os conceitos de wireframe, que podem ser comparados antes do protótipo.</p>
+      <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+        <a href="images/norma-caselog.jpg" style="display:block"><img src="images/norma-caselog.jpg" alt="Case log do projeto SKU Limits escalável: na lateral, as etapas do processo, de 0.1 Explore decision a 3.2 Handoff; no centro, a etapa 1.1 Problem exploration com projeto, designer, data, value stream e o início do resumo da iniciativa." width="1884" height="423" loading="lazy" style="display:block;width:100%;height:auto"></a>
+        <figcaption style="font-size:14px;line-height:1.55;color:var(--muted)">Case log: as etapas do processo na lateral e, na etapa 1.1, os dados do projeto e o resumo da iniciativa.</figcaption>
+      </figure>
+      <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+        <a href="images/norma-wireframe.jpg" style="display:block"><img src="images/norma-wireframe.jpg" alt="Etapa 2.2 Wireframe concept no case log: botões para escolher entre versões do conceito e, abaixo, o wireframe do checkpoint de envio em lote, com 824 itens importados, 23 ignorados por erro, prazos de ativação por CDD e POC e uma nota de coexistência com o canal de upload legado." width="1884" height="890" loading="lazy" style="display:block;width:100%;height:auto"></a>
+        <figcaption style="font-size:14px;line-height:1.55;color:var(--muted)">Etapa 2.2: versões do conceito para escolher e comparar. Aqui, o checkpoint do envio em lote, antes do processamento.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Protótipo gerado</h2>
+    <div class="body">
+      <p>Protótipo navegável de alta fidelidade gerado com a Norma para o projeto SKU Limits escalável, na etapa 2.3 do processo. O projeto permite definir e manter limites de compra por SKU para cada ponto de venda (POC) ou centro de distribuição (CDD).</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px 24px">
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <a href="images/norma-prototipo-1.webp" style="display:block"><img src="images/norma-prototipo-1.webp" alt="Página inicial do SKU Limits na BEES One: atalhos para upload em lote e gestão de limites, e uma tabela de itens que precisam de revisão, com prioridade, problema, POC e SKU, job de origem e origem." width="2000" height="1077" loading="lazy" style="display:block;width:100%;height:auto"></a>
+          <figcaption style="font-size:14px;line-height:1.55;color:var(--muted)">Início: atalhos para upload em lote e gestão de limites, e uma fila do que precisa de revisão.</figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <a href="images/norma-prototipo-2.webp" style="display:block"><img src="images/norma-prototipo-2.webp" alt="Janela de importação de limites de SKU: área para arrastar um arquivo CSV, link para baixar o modelo e botão para seguir para a revisão." width="2000" height="1079" loading="lazy" style="display:block;width:100%;height:auto"></a>
+          <figcaption style="font-size:14px;line-height:1.55;color:var(--muted)">Importação em lote: upload de CSV, com modelo para download, antes da revisão.</figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <a href="images/norma-prototipo-3.webp" style="display:block"><img src="images/norma-prototipo-3.webp" alt="Aba Todos os limites: tabela com POC ou CDD, SKU, escopo, tipo, valor, origem e data de atualização de cada limite configurado." width="2000" height="1080" loading="lazy" style="display:block;width:100%;height:auto"></a>
+          <figcaption style="font-size:14px;line-height:1.55;color:var(--muted)">Registro unificado: todos os limites em um só lugar, com a origem de cada um (upload legado, Offer Creator ou edição guiada).</figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <a href="images/norma-prototipo-4.webp" style="display:block"><img src="images/norma-prototipo-4.webp" alt="Aba Atribuir limite: formulário vazio com escopo, POC ou CDD, seleção de SKUs, tipo de limite, valor e datas de validade opcionais." width="2000" height="1075" loading="lazy" style="display:block;width:100%;height:auto"></a>
+          <figcaption style="font-size:14px;line-height:1.55;color:var(--muted)">Atribuição guiada: escopo por POC ou CDD, tipo, valor e validade.</figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <a href="images/norma-prototipo-5.webp" style="display:block"><img src="images/norma-prototipo-5.webp" alt="Janela de seleção de SKUs: à esquerda, a lista de SKUs disponíveis com busca e filtros; à direita, os SKUs selecionados." width="2000" height="1082" loading="lazy" style="display:block;width:100%;height:auto"></a>
+          <figcaption style="font-size:14px;line-height:1.55;color:var(--muted)">Seleção de SKUs: disponíveis e selecionados lado a lado.</figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <a href="images/norma-prototipo-6.webp" style="display:block"><img src="images/norma-prototipo-6.webp" alt="Formulário de atribuição preenchido: escopo CDD, CDD-12, limite mensal de 130 unidades, dois SKUs selecionados e validade de 23 de novembro a 25 de dezembro de 2026." width="2000" height="1075" loading="lazy" style="display:block;width:100%;height:auto"></a>
+          <figcaption style="font-size:14px;line-height:1.55;color:var(--muted)">Limite preenchido e pronto para salvar.</figcaption>
+        </figure>
+      </div>
+      <p style="font-size:14px;color:var(--muted);margin:0">Clique em uma imagem para vê-la em tamanho real.</p>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Impacto</h2>
+    <div class="body">
+      <div class="list">
+        <div class="row"><span class="k">Estado atual</span><span class="v">O primeiro teste sintético foi positivo. Ainda falta testar com uma iniciativa real.</span></div>
+        <div class="row"><span class="k">Como estamos medindo</span><span class="v">Veja “Próximos passos”: prova de conceito por pilar, iniciativa real e piloto com produtos do time.</span></div>
+      </div>
+      <p class="ph">[Quando houver: adoção pelo time, qualidade das discussões, tempo até o alinhamento, feedback de quem usa.]</p>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Aprendizados</h2>
+    <div class="body">
+      <h3>Janelas de contexto muito grandes comprometem a qualidade da IA</h3>
+      <p>Quando a janela de contexto cresce demais, a IA precisa lembrar de muita coisa e tende a descartar o que é mais antigo nela.</p>
+      <div class="list">
+        <div class="row"><span class="k">Primeira resposta</span><span class="v">Criar artefatos em cada etapa, que retroalimentam o contexto.</span></div>
+        <div class="row"><span class="k">Próxima resposta</span><span class="v">Criar subagentes que atuam em partes específicas do processo. A Norma seria a gerente do processo, e cada etapa seria executada por “alguém do time”. Ainda não está desenvolvido, está em análise.</span></div>
+        <div class="row"><span class="k">Por que importa</span><span class="v">A qualidade e a consistência do discovery/understand definem o resto. O resultado dele, em formato de design brief, gera os wireframes de conceito e, na etapa seguinte, um protótipo de alta fidelidade para ser aprovado pelo time.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s">
+    <h2>Próximos passos</h2>
+    <div class="body">
+      <div class="list">
+        <div class="row"><span class="k">Subagentes por etapa</span><span class="v">Em análise: dividir o processo em subagentes especializados, com a Norma como gerente, para manter qualidade e consistência sem depender de uma janela de contexto grande.</span></div>
+        <div class="row"><span class="k">Camada de dados</span><span class="v">Integrar análise de dados via Databricks, Segment e outras ferramentas para triangular os outputs.</span></div>
+      </div>
+      <h3>Como vamos medir</h3>
+      <p>Uma prova de conceito que analisa cada pilar do processo de execução, para responder a três perguntas: ele funciona, o retorno das informações é satisfatório e conseguimos chegar até a geração de um protótipo de alta fidelidade.</p>
+      <div class="list">
+        <div class="row"><span class="k">1. Teste sintético</span><span class="v">Feito, com resultado positivo.</span></div>
+        <div class="row"><span class="k">2. Iniciativa real</span><span class="v">Testar o processo com uma iniciativa real.</span></div>
+        <div class="row"><span class="k">3. Piloto</span><span class="v">Pilotar com alguns produtos atendidos pelo time de design e iterar conforme a necessidade.</span></div>
+      </div>
+      <h3>Guardrails</h3>
+      <p>Aline Faria está construindo guardrails que ajudam a entender os outputs e as respostas da Norma, para garantir consistência e qualidade e evitar alucinação.</p>
+      <h3>Novos workflows e integrações</h3>
+      <div class="list">
+        <div class="row"><span class="k">Novo workflow</span><span class="v">Business analyst.</span></div>
+        <div class="row"><span class="k">Nova integração</span><span class="v">Agentic development, conectando o design com os times de engenharia e arquitetura.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" data-lock>
+    <h2 style="visibility:hidden">Nota</h2>
+    <div class="body"><div class="panel">Este documento é confidencial e foi criado para ser compartilhado sob solicitação. Não inclui telas internas nem dados da companhia.</div></div>
+  </section>
+  <section class="next"><span class="eyebrow">Próximo projeto</span><a href="case-catalogo.html">Gestão de catálogo →</a></section>
+</main>
+
+
+  <footer><span>© 2026 Mari Castro</span><span>Product Design</span></footer>
+</div>
+
+</body></html>
